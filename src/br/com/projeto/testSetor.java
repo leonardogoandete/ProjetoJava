@@ -5,6 +5,8 @@ import br.com.projeto.Classes.Setor;
 public class testSetor {
     public static void main(String[] args) {
         Setor y = new Setor();
-        System.out.println(y.itensLiberados("Informatica"));
+        Setor x = new Setor();
+        System.out.println("\n"+y.itensLiberados("Informatica"));
+        System.out.println(x.itensLiberados("RH"));
     }
 }
