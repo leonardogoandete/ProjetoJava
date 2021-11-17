@@ -57,10 +57,6 @@ public class Setor {
 
     @Override
     public String toString() {
-        return "br.com.projeto.Classes.Setor{" +
-                "nome='" + nome + '\'' +
-                ", itens=" + itens +
-                ", usuarios=" + usuarios +
-                '}';
+        return "br.com.projeto.Classes.Setor | nome=" + nome+"\n";
     }
 }

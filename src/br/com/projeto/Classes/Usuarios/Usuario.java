@@ -1,8 +1,6 @@
 package br.com.projeto.Classes.Usuarios;
 
 import br.com.projeto.Classes.Item;
-import br.com.projeto.Classes.Situacao;
-
 import java.util.ArrayList;
 import java.util.List;
 
