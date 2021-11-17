@@ -1,9 +1,12 @@
-package br.com.projeto.Classes;
+package br.com.projeto.Classes.Usuarios;
+
+import br.com.projeto.Classes.Setor;
+import br.com.projeto.Classes.Solicitacao;
 
 public class Supervisor extends Usuario{
 
-    public Supervisor(String login, boolean statusUsuario) {
-        super(login, statusUsuario);
+    public Supervisor(String login,String senha) {
+        super(login,senha);
     }
 
     private Solicitacao aprovaSolicitacao(){

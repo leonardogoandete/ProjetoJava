@@ -1,10 +1,12 @@
-package br.com.projeto.Classes;
+package br.com.projeto.Classes.Usuarios;
+
+import br.com.projeto.Classes.Item;
 
 import java.util.List;
 
-public class Administrador extends Usuario{
-    public Administrador(String login, boolean statusUsuario) {
-        super(login, statusUsuario);
+public class Administrador extends Usuario {
+    public Administrador(String login,String senha) {
+        super(login,senha);
     }
     private String tipoUsuario(){
 

@@ -1,4 +1,4 @@
-package br.com.projeto;
+package br.com.projeto.Classes.Testes;
 
 import br.com.projeto.Classes.Item;
 public class testItem {

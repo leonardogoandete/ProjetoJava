@@ -1,5 +1,7 @@
 package br.com.projeto.Classes;
 
+import br.com.projeto.Classes.Usuarios.Usuario;
+
 import java.util.ArrayList;
 import java.util.List;
 public class Setor {
@@ -40,7 +42,9 @@ public class Setor {
     }
 
     public List<Usuario> getUsuarios(){
-        return usuarios;
+        //List<Usuario> usuarios = new Usuario();
+
+        return null;
     }
 
     public String getNome() {
