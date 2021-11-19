@@ -1,7 +1,5 @@
 package br.com.projeto.Classes;
 
-import java.util.Date;
-
 public class Solicitacao {
     private int numPedido, dataPedido, dataRetirada;
     private boolean pedidoRetirado;

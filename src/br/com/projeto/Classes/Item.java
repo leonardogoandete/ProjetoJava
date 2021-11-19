@@ -10,7 +10,6 @@ public class Item {
     private List<Setor> setores = new ArrayList<Setor>();
     private List<Item> lista_itens = new ArrayList<Item>();
 
-    //public Item() {    }
 
     public Item(String nome, String descricao, String tipo, int qtde, float valor) {
         this.nome = nome;

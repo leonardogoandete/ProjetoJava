@@ -9,8 +9,6 @@ public class testItem {
 
     public static void main(String[] args) {
         List<Item> adiciona_itens = new ArrayList<>();
-        //Item teste = new Item("Caneta","Caneta Azul","insumo",50,2.12f);
-
 
         adiciona_itens.add(new Item("Caneta","Caneta Azul","insumo",50,2.12f));
         adiciona_itens.add(new Item("Caneta","Caneta Vermelha","insumo",25,2.55f));

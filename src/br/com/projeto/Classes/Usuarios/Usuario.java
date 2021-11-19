@@ -14,6 +14,7 @@ public class Usuario {
     public Usuario(String login,String senha) {
         setLogin(login);
         setSenha(senha);
+        setCotaMaxima(300);
         setStatusUsuario(true);
     }
 

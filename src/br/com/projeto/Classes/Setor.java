@@ -38,7 +38,7 @@ public class Setor {
 
     public int cotaLiberadaSetor(){
 
-        return 0;
+        return 1000;
     }
 
     public List<Usuario> getUsuarios(){
