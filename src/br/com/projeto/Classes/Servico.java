@@ -6,16 +6,13 @@ public class Servico {
 
     }
 
-
-
     public Item consultaItens(){
 
         return null;
     }
 
-    //public Solicitacao verificaStatusSolicitacao(){
-
-        //return Solicitacao;
-    //}
+    public Solicitacao verificaStatusSolicitacao(){
+        return null;
+    }
 
 }

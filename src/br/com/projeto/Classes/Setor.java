@@ -1,51 +1,26 @@
 package br.com.projeto.Classes;
-
-import br.com.projeto.Classes.Usuarios.Usuario;
-
-import java.util.ArrayList;
-import java.util.List;
+import br.com.projeto.Classes.Item;
 public class Setor {
-
+    private Item x;
     private String nome;
-    private List<Item> itens = new ArrayList<Item>();
-    private List<Usuario> usuarios = new ArrayList<Usuario>();
-
-    public Setor(){}
+    // contrutor
     public Setor(String nome) {
         this.nome = nome;
     }
 
 
-    public List<Item> itensLiberados(String nome_setor) {
-        if (nome_setor.equals("Informatica")) {
-            Item pc = new Item("PC", "PC de mesa", "TI", 10, 238.89f);
-            Item note = new Item("Notebook", "Note RH", "TI", 3, 1238.89f);
-
-            itens.add(pc);
-            itens.add(note);
-            return itens;
-        }
-        if(nome_setor.equals("RH")){
-            Item pc = new Item("Mouse", "mouse USB", "TI", 5, 25.99f);
-            Item note = new Item("Teclado", "Teclado", "TI", 3, 1238.89f);
-
-            itens.add(pc);
-            itens.add(note);
-            return itens;
-        }
-        return null;
-    }
-
     public int cotaLiberadaSetor(){
+        int cota_setor = 0;
+        if(this.getNome().equals("rh")) { cota_setor = 1000;}
+        if(this.getNome().equals("ti")){ cota_setor = 1500;}
 
-        return 1000;
+        return cota_setor;
     }
 
-    public List<Usuario> getUsuarios(){
-        //List<Usuario> usuarios = new Usuario();
+    public void itensLiberados(){
 
-        return null;
     }
+
 
     public String getNome() {
         return nome;

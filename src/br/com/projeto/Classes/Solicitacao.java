@@ -60,10 +60,5 @@ public class Solicitacao {
         this.pedidoRetirado = pedidoRetirado;
     }
 
-    //public Situacao setStatusSolicitacao(Situacao status){
-      //  return status;
-    //}
-   // public Situacao setStatusSolicitacao(Situacao status){
-     //   return status;
-    //}
+
 }

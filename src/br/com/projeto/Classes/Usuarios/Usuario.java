@@ -32,7 +32,7 @@ public class Usuario {
     }
 
     public void verificaSaldo(){
-
+        setSaldoCota(getCotaMaxima()-getSaldoCota());
     }
 
     // getter e setters

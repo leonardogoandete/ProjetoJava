@@ -9,7 +9,7 @@ public class testUsuario {
         lari.verificaLogin("lari","aad81416");
         leo.verificaLogin("leo_goandete","123456");
         leo.setSaldoCota(200);
-
+        leo.verificaSaldo();
         System.out.println(leo.toString());
     }
 }
