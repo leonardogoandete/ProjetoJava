@@ -6,7 +6,7 @@ public class testUsuario {
         Usuario leo = new Usuario("leo_goandete","123456");
         Usuario lari = new Usuario("laris","jujuba");
 
-        lari.verificaLogin("lari","aad81416");
+        lari.verificaLogin("lari","aad8141556");
         leo.verificaLogin("leo_goandete","123456");
         leo.setSaldoCota(200);
         leo.verificaSaldo();
