@@ -1,15 +1,17 @@
 package br.com.projeto.Classes.Usuarios;
+import br.com.projeto.Classes.Setor;
 
-import br.com.projeto.Classes.Item;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Usuario {
 
-    private String login,senha;
-    private int cotaMaxima,saldoCota;
+    private String login;
+    private String senha;
+    private int cotaMaxima;
+    private int saldoCota;
     private boolean statusUsuario;
-    private List<Item> itens = new ArrayList<Item>();
+    private Setor setor;
 
     public Usuario(String login,String senha) {
         setLogin(login);
