@@ -8,27 +8,30 @@ public class Usuario {
 
     private String login;
     private String senha;
-    private int cotaMaxima;
+    private String tipo;
+    private int cotaMaxima,x;
     private int saldoCota;
     private boolean statusUsuario;
-    private Setor setor;
+    public Setor setor;
 
     public Usuario(String login,String senha) {
-        setLogin(login);
-        setSenha(senha);
-        setCotaMaxima(300);
-        setStatusUsuario(true);
+        this.setLogin(login);
+        this.setSenha(senha);
+        this.setTipo("usuario");
+        this.setCotaMaxima(300);
+        this.setSaldoCota(200);
+        this.setStatusUsuario(true);
     }
 
 
     public void verificaLogin(String loginx, String senha){
-        if (loginx.equals(getLogin()) && senha.equals("123456") && isStatusUsuario() == true) {
+        if (loginx.equals(getLogin()) && senha.equals(getSenha()) && isStatusUsuario() == true) {
             System.out.println("Login Realizado!");
         }else{
             if (isStatusUsuario() == false){
                 System.out.println("Usuario bloqueado");
             }else {
-                System.out.println("Login Invalido!");
+                System.out.println("Login ou senha invalida!");
             }
         }
     }
@@ -67,7 +70,7 @@ public class Usuario {
         return saldoCota;
     }
 
-    public void setSaldoCota(int saldoCota) {
+    private void setSaldoCota(int saldoCota) {
         this.saldoCota = saldoCota;
     }
 
@@ -79,4 +82,19 @@ public class Usuario {
         this.statusUsuario = statusUsuario;
     }
 
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public Setor getSetor() {
+        return setor;
+    }
+
+    public void setSetor(Setor setor) {
+        this.setor = setor;
+    }
 }

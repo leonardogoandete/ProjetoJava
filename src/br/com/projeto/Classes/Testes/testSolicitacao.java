@@ -5,7 +5,6 @@ import br.com.projeto.Classes.Solicitacao;
 public class testSolicitacao {
     public static void main(String[] args) {
 
-
             Solicitacao pedido1 = new Solicitacao(001,221121, 301121, false);
 
             System.out.println("Nmro pedido: " + pedido1.getNumPedido());

@@ -7,9 +7,15 @@ public class testUsuario {
 
 
         leo.verificaLogin("leo_goandete","123456");
-        leo.setSaldoCota(200);
-        leo.verificaSaldo();
-        System.out.println(leo.getLogin());
+        System.out.println("Saldo:"+leo.getSaldoCota());
+        System.out.println("Login:"+leo.getLogin());
+        System.out.println("Perfil:"+leo.getTipo());
+
+        //Setor leo
+        leo.setor.setNome("rh");
+
+
+
 
     }
 }

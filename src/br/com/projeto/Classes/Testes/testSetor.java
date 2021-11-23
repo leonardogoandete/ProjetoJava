@@ -2,14 +2,15 @@ package br.com.projeto.Classes.Testes;
 
 import br.com.projeto.Classes.Setor;
 
+import java.util.ArrayList;
+
 public class testSetor {
     public static void main(String[] args) {
-        Setor y = new Setor("ti");
-        Setor k = new Setor("rh");
+        ArrayList<Setor> lista_setor = new ArrayList<>();
 
+        lista_setor.add(new Setor("rh"));
+        lista_setor.add(new Setor("ti"));
 
-        System.out.println("Cota setor "+ y.getNome()+":" + y.cotaLiberadaSetor());
-        System.out.println("Cota setor "+ k.getNome()+":" + k.cotaLiberadaSetor());
 
     }
 }

@@ -7,7 +7,11 @@ public class Supervisor extends Usuario{
 
     public Supervisor(String login,String senha) {
         super(login,senha);
+        this.setLogin(login);
+        this.setSenha(senha);
+        setTipo("supervisor");
     }
+
 
     private Solicitacao aprovaSolicitacao(){
 
