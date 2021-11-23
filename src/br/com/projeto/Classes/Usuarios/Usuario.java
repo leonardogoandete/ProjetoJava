@@ -77,13 +77,4 @@ public class Usuario {
         this.statusUsuario = statusUsuario;
     }
 
-    @Override
-    public String toString() {
-        return "Usuario{" +
-                "login='" + login + '\'' +
-                ", cotaMaxima=" + cotaMaxima +
-                ", saldoCota=" + saldoCota +
-                ", statusUsuario=" + statusUsuario +
-                '}';
-    }
 }

@@ -1,11 +1,11 @@
 package br.com.projeto.Classes;
-import br.com.projeto.Classes.Item;
+
 public class Setor {
-    private Item x;
     private String nome;
+
     // contrutor
-    public Setor(String nome) {
-        this.nome = nome;
+    public Setor(String addNome) {
+        setNome(addNome);
     }
 
 
@@ -28,10 +28,5 @@ public class Setor {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    @Override
-    public String toString() {
-        return "br.com.projeto.Classes.Setor | nome=" + nome+"\n";
     }
 }

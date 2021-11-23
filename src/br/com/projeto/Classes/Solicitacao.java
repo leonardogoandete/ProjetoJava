@@ -1,17 +1,20 @@
 package br.com.projeto.Classes;
 
 public class Solicitacao {
-    private int numPedido, dataPedido, dataRetirada;
+    private int numPedido;
+    private int dataPedido;
+    private int dataRetirada;
     private boolean pedidoRetirado;
 
-    public Solicitacao(int numPedido, int dataPedido, int dataRetirada, boolean pedidoRetirado) {
-        this.numPedido = numPedido;
-        this.dataPedido = dataPedido;
-        this.dataRetirada = dataRetirada;
-        this.pedidoRetirado = pedidoRetirado;
+    public Solicitacao(int nPedido, int dtPedido, int dtRetirada, boolean pedRetirado) {
+        setNumPedido(nPedido);
+        setDataPedido(dtPedido);
+        setDataRetirada(dtRetirada);
+        setPedidoRetirado(pedRetirado);
     }
 
     public Situacao statusSolicitacao(int valor){
+
         switch (valor){
             case 1:
                  return Situacao.APROVADO;

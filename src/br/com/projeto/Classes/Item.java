@@ -1,16 +1,18 @@
 package br.com.projeto.Classes;
 
 public class Item {
-    private String nome, descricao, tipo;
+    private String nome;
+    private String descricao;
+    private String tipo;
     private int qtde;
     private float valor;
 
-    public Item(String nome, String descricao, String tipo, int qtde, float valor) {
-        this.nome = nome;
-        this.descricao = descricao;
-        this.tipo = tipo;
-        this.qtde = qtde;
-        this.valor = valor;
+    public Item(String xnome, String xdescricao, String xtipo, int xqtde, float xvalor) {
+        setNome(xnome);
+        setDescricao(xdescricao);
+        setTipo(xtipo);
+        setQtde(xqtde);
+        setValor(xvalor);
     }
 
     public String getNome() {
@@ -64,7 +66,6 @@ public class Item {
                 ", valor=" + valor +
                 '}';
     }
-
 
 }
 
