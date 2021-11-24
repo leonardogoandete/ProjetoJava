@@ -17,6 +17,5 @@ public class testUsuarioSolicitacao {
         System.out.println("Pedido retirado:"+sol1.isPedidoRetirado());
         System.out.println("Item solicitado:"+item.getNome()+" valor: R$"+item.getValor());
 
-
     }
 }
