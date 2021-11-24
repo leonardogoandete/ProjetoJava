@@ -1,5 +1,6 @@
 package br.com.projeto.Classes.Usuarios;
 import br.com.projeto.Classes.Setor;
+import br.com.projeto.Classes.Solicitacao;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +14,7 @@ public class Usuario {
     private int saldoCota;
     private boolean statusUsuario;
     public Setor setor;
+    public Solicitacao solicitacao;
 
     public Usuario(String login,String senha, Setor setor) {
         this.setLogin(login);

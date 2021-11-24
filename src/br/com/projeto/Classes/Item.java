@@ -58,13 +58,7 @@ public class Item {
 
     @Override
     public String toString() {
-        return "br.com.projeto.Classes.Item{" +
-                "nome='" + nome + '\'' +
-                ", descricao='" + descricao + '\'' +
-                ", tipo='" + tipo + '\'' +
-                ", qtde=" + qtde +
-                ", valor=" + valor +
-                '}';
+        return "\nNome: "+getNome()+" Descricao:"+getDescricao()+" tipo:"+getTipo()+" Quantidade:"+getQtde()+" Valor R$"+getValor();
     }
 
 }

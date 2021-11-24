@@ -1,12 +1,15 @@
 package br.com.projeto.Classes;
 
+import br.com.projeto.Classes.Usuarios.Usuario;
+
 public class Solicitacao {
     private int numPedido;
     private int dataPedido;
     private int dataRetirada;
     private boolean pedidoRetirado;
-
-    public Solicitacao(int nPedido, int dtPedido, int dtRetirada, boolean pedRetirado) {
+    private Usuario usuario;
+    public Solicitacao(Usuario usuario, int nPedido, int dtPedido, int dtRetirada, boolean pedRetirado) {
+        setUsuario(usuario);
         setNumPedido(nPedido);
         setDataPedido(dtPedido);
         setDataRetirada(dtRetirada);
@@ -63,5 +66,11 @@ public class Solicitacao {
         this.pedidoRetirado = pedidoRetirado;
     }
 
+    public Usuario getUsuario() {
+        return usuario;
+    }
 
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
 }
