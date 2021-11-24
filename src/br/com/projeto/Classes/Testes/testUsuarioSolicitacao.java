@@ -18,6 +18,5 @@ public class testUsuarioSolicitacao {
         System.out.println("Item solicitado:"+item.getNome()+" valor: R$"+item.getValor());
 
 
-
     }
 }
