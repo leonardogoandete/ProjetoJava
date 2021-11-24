@@ -7,7 +7,6 @@ import java.util.ArrayList;
 public class Setor {
     private String nome;
     private int cotasetor;
-    private Usuario x;
     ArrayList<Item> listaItens = new ArrayList<>();
 
     // construtor
