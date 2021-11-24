@@ -14,7 +14,7 @@ public class Solicitacao {
     }
 
     public Situacao statusSolicitacao(int valor){
-
+        
         switch (valor){
             case 1:
                  return Situacao.APROVADO;

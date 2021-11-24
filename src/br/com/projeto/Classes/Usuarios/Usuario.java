@@ -14,13 +14,14 @@ public class Usuario {
     private boolean statusUsuario;
     public Setor setor;
 
-    public Usuario(String login,String senha) {
+    public Usuario(String login,String senha, Setor setor) {
         this.setLogin(login);
         this.setSenha(senha);
         this.setTipo("usuario");
         this.setCotaMaxima(300);
         this.setSaldoCota(200);
         this.setStatusUsuario(true);
+        this.setSetor(setor);
     }
 
 
@@ -97,4 +98,5 @@ public class Usuario {
     public void setSetor(Setor setor) {
         this.setor = setor;
     }
+
 }

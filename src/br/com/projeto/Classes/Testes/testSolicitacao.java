@@ -10,7 +10,7 @@ public class testSolicitacao {
             System.out.println("Nmro pedido: " + pedido1.getNumPedido());
             System.out.println("Data pedido: "+ pedido1.getDataPedido());
             System.out.println("Data retirada: "+ pedido1.getDataRetirada());
-            System.out.println(pedido1.statusSolicitacao(2));
+            System.out.println(pedido1.statusSolicitacao(3));
 
     }
 }

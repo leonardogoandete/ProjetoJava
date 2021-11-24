@@ -5,8 +5,8 @@ import br.com.projeto.Classes.Solicitacao;
 
 public class Supervisor extends Usuario{
 
-    public Supervisor(String login,String senha) {
-        super(login,senha);
+    public Supervisor(String login,String senha, Setor setor) {
+        super(login,senha,setor);
         this.setLogin(login);
         this.setSenha(senha);
         setTipo("supervisor");
