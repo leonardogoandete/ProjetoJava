@@ -11,6 +11,5 @@ public class testSetor {
         lista_setor.add(new Setor("rh"));
         lista_setor.add(new Setor("ti"));
 
-
     }
 }
