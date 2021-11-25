@@ -1,6 +1,9 @@
-package br.com.projeto.Classes;
+package br.com.projeto.negocio;
 
-import br.com.projeto.Classes.Usuarios.Usuario;
+
+import br.com.projeto.classes.Usuario;
+
+import java.util.ArrayList;
 
 public class Solicitacao {
     private int numPedido;
@@ -8,12 +11,13 @@ public class Solicitacao {
     private int dataRetirada;
     private boolean pedidoRetirado;
     private Usuario usuario;
+
     public Solicitacao(Usuario usuario, int nPedido, int dtPedido, int dtRetirada, boolean pedRetirado) {
-        setUsuario(usuario);
-        setNumPedido(nPedido);
-        setDataPedido(dtPedido);
-        setDataRetirada(dtRetirada);
-        setPedidoRetirado(pedRetirado);
+        this.setUsuario(usuario);
+        this.setNumPedido(nPedido);
+        this.setDataPedido(dtPedido);
+        this.setDataRetirada(dtRetirada);
+        this.setPedidoRetirado(pedRetirado);
     }
 
     public Situacao statusSolicitacao(int valor){
@@ -71,6 +75,9 @@ public class Solicitacao {
     }
 
     public void setUsuario(Usuario usuario) {
+        if (usuario == null){
+            throw new RuntimeException("Usuario da solicitacao nao pode ser nulo!");
+        }
         this.usuario = usuario;
     }
 }

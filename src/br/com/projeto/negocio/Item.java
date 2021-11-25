@@ -1,4 +1,4 @@
-package br.com.projeto.Classes;
+package br.com.projeto.negocio;
 
 public class Item {
     private String nome;
@@ -8,11 +8,11 @@ public class Item {
     private float valor;
 
     public Item(String xnome, String xdescricao, String xtipo, int xqtde, float xvalor) {
-        setNome(xnome);
-        setDescricao(xdescricao);
-        setTipo(xtipo);
-        setQtde(xqtde);
-        setValor(xvalor);
+        this.setNome(xnome);
+        this.setDescricao(xdescricao);
+        this.setTipo(xtipo);
+        this.setQtde(xqtde);
+        this.setValor(xvalor);
     }
 
     public String getNome() {
@@ -20,6 +20,9 @@ public class Item {
     }
 
     public void setNome(String nome) {
+        if (nome.length() <= 3){
+            throw new RuntimeException("Nome muito pequeno!");
+        }
         this.nome = nome;
     }
 
@@ -28,6 +31,12 @@ public class Item {
     }
 
     public void setDescricao(String descricao) {
+        if (descricao == null){
+            throw new RuntimeException("Descricao nao pode ser nula!");
+        }
+        if (descricao.length() <= 5){
+            throw new RuntimeException("Descricao muito curta!");
+        }
         this.descricao = descricao;
     }
 
@@ -44,6 +53,9 @@ public class Item {
     }
 
     public void setQtde(int qtde) {
+        if (qtde < 0){
+            throw new RuntimeException("Quantidade nao pode ser negativo!");
+        }
         this.qtde = qtde;
     }
 
@@ -52,13 +64,10 @@ public class Item {
     }
 
     public void setValor(float valor) {
+        if (valor <= 0){
+            throw new RuntimeException("Valor nao pode ser negativo!");
+        }
         this.valor = valor;
-    }
-
-
-    @Override
-    public String toString() {
-        return "\nNome: "+getNome()+" Descricao:"+getDescricao()+" tipo:"+getTipo()+" Quantidade:"+getQtde()+" Valor R$"+getValor();
     }
 
 }

@@ -1,4 +1,4 @@
-package br.com.projeto.Classes;
+package br.com.projeto.negocio;
 
 public enum Situacao {
     APROVADO("Aprovado"), REPROVADO("Reprovado"), PENDENTE("Pendente"),  AGUARDANDO("Aguardando"), CANCELADO("Cancelado");

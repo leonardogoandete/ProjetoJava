@@ -1,4 +1,7 @@
-package br.com.projeto.Classes;
+package br.com.projeto.negocio;
+
+import br.com.projeto.negocio.Item;
+import br.com.projeto.negocio.Solicitacao;
 
 public class Servico {
 
