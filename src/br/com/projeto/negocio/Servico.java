@@ -1,3 +1,4 @@
+/*
 package br.com.projeto.negocio;
 
 import br.com.projeto.negocio.Item;
@@ -19,3 +20,4 @@ public class Servico {
     }
 
 }
+*/

@@ -7,6 +7,7 @@ public class Usuario {
     private int cotamaxima;
     private int saldocota;
     private boolean statususuario;
+    private Setor setor;
 
     public Usuario(String login, String senha,int saldocota, boolean statususuario) {
         this.setLogin(login);
@@ -84,6 +85,17 @@ public class Usuario {
 
     public void setStatususuario(boolean statususuario) {
         this.statususuario = statususuario;
+    }
+
+    public Setor getSetor() {
+        return setor;
+    }
+
+    public void setSetor(Setor setor) {
+        if (setor == null){
+            throw new RuntimeException("Setor nao pode ser abaixo nulo!");
+        }
+        this.setor = setor;
     }
 }// fim classe usuario
 

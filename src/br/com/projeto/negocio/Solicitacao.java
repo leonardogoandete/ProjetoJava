@@ -3,8 +3,6 @@ package br.com.projeto.negocio;
 
 import br.com.projeto.classes.Usuario;
 
-import java.util.ArrayList;
-
 public class Solicitacao {
     private int numPedido;
     private int dataPedido;
