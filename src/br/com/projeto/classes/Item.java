@@ -1,4 +1,7 @@
-package br.com.projeto.negocio;
+package br.com.projeto.classes;
+
+
+import java.util.List;
 
 public class Item {
     private String nome;
@@ -70,6 +73,15 @@ public class Item {
         this.valor = valor;
     }
 
+    public Setor setoresAutorizados(){
+
+        return null;
+    }
+
+    public List<Solicitacao> solicitacoes(){
+
+        return null;
+    }
 }
 
 

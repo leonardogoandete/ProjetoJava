@@ -1,8 +1,8 @@
-/*
+
 package br.com.projeto.negocio;
 
-import br.com.projeto.negocio.Item;
-import br.com.projeto.negocio.Solicitacao;
+import br.com.projeto.classes.Item;
+import br.com.projeto.classes.Solicitacao;
 
 public class Servico {
 
@@ -20,4 +20,3 @@ public class Servico {
     }
 
 }
-*/

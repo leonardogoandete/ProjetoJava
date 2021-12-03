@@ -1,5 +1,9 @@
 package br.com.projeto.classes;
 
+import br.com.projeto.negocio.Servico;
+
+import java.security.Provider;
+
 public class Usuario {
 
     private String login;
@@ -8,12 +12,12 @@ public class Usuario {
     private int saldocota;
     private boolean statususuario;
     private Setor setor;
+    public Servico servicos;
 
-    public Usuario(String login, String senha,int saldocota, boolean statususuario) {
+    public Usuario(String login, String senha, boolean statususuario) {
         this.setLogin(login);
         this.setSenha(senha);
-        this.setCotamaxima(300);
-        this.setSaldocota(300);
+        saldocota = 300;
         this.setStatususuario(statususuario);
     }
 
@@ -26,10 +30,6 @@ public class Usuario {
             throw new RuntimeException("Senha invalida!");
         }
         //return false;
-    }
-
-    public int verificaSaldo(){
-        return this.getSaldocota();
     }
 
     public String getLogin() {
@@ -57,26 +57,8 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public int getCotamaxima() {
-        return cotamaxima;
-    }
-
-    public void setCotamaxima(int cotamaxima) {
-        if (cotamaxima <= 0){
-            throw new RuntimeException("Cota não pode ser abaixo de 0.");
-        }
-        this.cotamaxima = cotamaxima;
-    }
-
-    public int getSaldocota() {
+    public int getSaldoCota() {
         return saldocota;
-    }
-
-    public void setSaldocota(int saldocota) {
-        if (saldocota <= 0){
-            throw new RuntimeException("Saldo de cota nao pode ser abaixo de 0!");
-        }
-        this.saldocota = saldocota;
     }
 
     public boolean isStatususuario() {
@@ -87,8 +69,8 @@ public class Usuario {
         this.statususuario = statususuario;
     }
 
-    public Setor getSetor() {
-        return setor;
+    public String getSetor() {
+        return setor.getNome();
     }
 
     public void setSetor(Setor setor) {

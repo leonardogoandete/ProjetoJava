@@ -1,10 +1,15 @@
 package br.com.projeto.classes;
 
+import java.util.List;
+
 public class Setor {
     public String nome;
+    public int cotaLiberada;
 
-    public Setor(String nome) {
+
+    public Setor(String nome, int cotaLiberada) {
         this.setNome(nome);
+        this.cotaLiberada=cotaLiberada;
     }
 
     public String getNome() {
@@ -18,6 +23,15 @@ public class Setor {
         this.nome = nome;
     }
 
+    public int getCotaLiberada() {
+        return cotaLiberada;
+    }
+
+
+    public List<Item> itensAutorizados(){
+
+        return  null;
+    }
 
 
 

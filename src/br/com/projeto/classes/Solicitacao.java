@@ -1,7 +1,5 @@
-package br.com.projeto.negocio;
+package br.com.projeto.classes;
 
-
-import br.com.projeto.classes.Usuario;
 
 public class Solicitacao {
     private int numPedido;
@@ -78,4 +76,5 @@ public class Solicitacao {
         }
         this.usuario = usuario;
     }
+
 }
