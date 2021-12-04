@@ -2,7 +2,6 @@ package br.com.projeto.classes;
 
 import br.com.projeto.negocio.Servico;
 
-import java.security.Provider;
 
 public class Usuario {
 
@@ -11,14 +10,16 @@ public class Usuario {
     private int cotamaxima;
     private int saldocota;
     private boolean statususuario;
-    private Setor setor;
+    public Setor setor;
+    public Solicitacao solicitacao;
     public Servico servicos;
 
-    public Usuario(String login, String senha, boolean statususuario) {
+    public Usuario(String login, String senha, boolean statususuario, Setor setor) {
         this.setLogin(login);
         this.setSenha(senha);
         saldocota = 300;
         this.setStatususuario(statususuario);
+        this.setSetor(setor);
     }
 
     public void verificaLogin(String login, String senha){

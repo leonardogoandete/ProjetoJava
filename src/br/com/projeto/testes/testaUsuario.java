@@ -18,7 +18,7 @@ public class testaUsuario {
 
         Administrador adm = new Administrador("admin","root",true);
 
-        adm.servicos.verificaStatusSolicitacao();
+        //adm.servicos.verificaStatusSolicitacao(1);
 
 
     }
