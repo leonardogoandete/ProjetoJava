@@ -30,7 +30,7 @@ public class Setor {
     }
 
     public List<Item> itensAutorizados(){
-        itens.getTipo().equals();
+        //itens.getTipo().equals();
         return null;
     }
 
