@@ -10,12 +10,12 @@ public class Item {
     private int qtde;
     private float valor;
 
-    public Item(String xnome, String xdescricao, String xtipo, int xqtde, float xvalor) {
-        this.setNome(xnome);
-        this.setDescricao(xdescricao);
-        this.setTipo(xtipo);
-        this.setQtde(xqtde);
-        this.setValor(xvalor);
+    public Item(String nome, String descricao, String tipo, int qtde, float valor) {
+        this.setNome(nome);
+        this.setDescricao(descricao);
+        this.setTipo(tipo);
+        this.setQtde(qtde);
+        this.setValor(valor);
     }
 
     public String getNome() {
@@ -73,7 +73,7 @@ public class Item {
         this.valor = valor;
     }
 
-    public Setor setoresAutorizados(){
+    public List<Setor> setoresAutorizados(){
 
         return null;
     }
