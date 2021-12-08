@@ -7,7 +7,7 @@ public class testeUsuarioSetor {
     public static void main(String[] args) {
 
         Setor rh = new Setor("Recursos Humanos",300);
-        Usuario leo = new Usuario("leo_goandete","kkkcpt",true);
+        Usuario leo = new Usuario("leo_goandete","kkkcpt",true,rh);
 
         leo.setSetor(rh);
 

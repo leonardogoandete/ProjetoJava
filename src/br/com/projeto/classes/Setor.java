@@ -5,6 +5,8 @@ import java.util.List;
 public class Setor {
     public String nome;
     public int cotaLiberada;
+    public List<Item> itens;
+    public List<Usuario> usuarios;
 
 
     public Setor(String nome, int cotaLiberada) {

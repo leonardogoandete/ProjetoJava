@@ -9,6 +9,7 @@ public class Item {
     private String tipo;
     private int qtde;
     private float valor;
+    private List<Setor> setores;
 
     public Item(String nome, String descricao, String tipo, int qtde, float valor) {
         this.setNome(nome);

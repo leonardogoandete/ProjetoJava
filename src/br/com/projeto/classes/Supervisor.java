@@ -2,8 +2,8 @@ package br.com.projeto.classes;
 
 public class Supervisor extends Usuario{
 
-    public Supervisor(String login, String senha, boolean statususuario) {
-        super(login, senha, statususuario);
+    public Supervisor(String login, String senha, boolean statususuario, Setor setor) {
+        super(login, senha, statususuario, setor);
     }
 
     public void aprovaSolicitacoes(Solicitacao solicitacao){

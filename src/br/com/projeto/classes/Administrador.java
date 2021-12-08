@@ -2,8 +2,8 @@ package br.com.projeto.classes;
 
 public class Administrador extends Usuario{
     Usuario usuario;
-    public Administrador(String login, String senha, boolean statususuario) {
-        super(login, senha, statususuario);
+    public Administrador(String login, String senha, boolean statususuario, Setor setor) {
+        super(login, senha, statususuario, setor);
     }
 
     private Usuario novoUsuario(){
