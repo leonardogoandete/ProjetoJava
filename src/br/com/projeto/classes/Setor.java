@@ -5,9 +5,6 @@ import java.util.List;
 public class Setor {
     public String nome;
     public int cotaLiberada;
-    public Usuario usuario;
-    public Item itens;
-    public Solicitacao solicitacoes;
 
 
     public Setor(String nome, int cotaLiberada) {
@@ -18,9 +15,6 @@ public class Setor {
     public String getNome() {
         return nome;
     }
-    public int getCotaLiberada() {
-        return cotaLiberada;
-    }
 
     public void setNome(String nome) {
         if (nome == null){
@@ -29,17 +23,15 @@ public class Setor {
         this.nome = nome;
     }
 
+    public int getCotaLiberada() {
+        return cotaLiberada;
+    }
+
+
     public List<Item> itensAutorizados(){
-        //itens.getTipo().equals();
-        return null;
+
+        return  null;
     }
-
-    public List<Usuario> getUsuarios(){
-        usuario.getLogin();
-        return null;
-    }
-
-
 
 
 
