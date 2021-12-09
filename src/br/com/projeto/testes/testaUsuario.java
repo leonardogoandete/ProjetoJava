@@ -12,13 +12,12 @@ public class testaUsuario {
 
         leo.verificaLogin("leo_goandete","154545");
 
-        Supervisor l = new Supervisor("ll","258re",true,rh);
+        Supervisor l = new Supervisor("ll","258re",true, rh);
 
         System.out.println(l.consultaSaldoUsuario(leo));
 
-        Administrador adm = new Administrador("admin","root",true,rh);
+        Administrador adm = new Administrador("admin","root",true, rh);
 
-        //adm.servicos.verificaStatusSolicitacao(1);
 
 
     }
