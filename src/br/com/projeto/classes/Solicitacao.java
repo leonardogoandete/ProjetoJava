@@ -1,12 +1,16 @@
 package br.com.projeto.classes;
 
 
+import java.util.List;
+
 public class Solicitacao {
     private int numPedido;
     private int dataPedido;
     private int dataRetirada;
     private boolean pedidoRetirado;
     private Usuario usuario;
+    private List<Item> itens;
+
 
     public Solicitacao(Usuario usuario, int nPedido, int dtPedido, int dtRetirada, boolean pedRetirado) {
         this.setUsuario(usuario);

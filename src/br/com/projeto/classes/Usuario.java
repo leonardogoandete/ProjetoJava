@@ -1,6 +1,5 @@
 package br.com.projeto.classes;
 
-import br.com.projeto.negocio.Servico;
 import java.util.List;
 
 public class Usuario {
@@ -11,7 +10,6 @@ public class Usuario {
     private int saldocota;
     private boolean statususuario;
     private Setor setor;
-    private Servico servicos;
     private List<Solicitacao> solicitacoes;
 
     public Usuario(String login, String senha, boolean statususuario, Setor setor) {
