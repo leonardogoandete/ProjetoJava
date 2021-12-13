@@ -76,13 +76,19 @@ public class Item {
     }
 
     public List<Setor> setoresAutorizados(){
-
-        return null;
+        return setoresAutorizados();
     }
 
     public List<Solicitacao> solicitacoes(){
+        return solicitacoes;
+    }
 
-        return null;
+    public void adicionaSetor(Setor s){
+
+    }
+
+    public void adicionaSolicitacao(Solicitacao s){
+
     }
 }
 

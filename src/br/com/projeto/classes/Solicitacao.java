@@ -1,41 +1,28 @@
 package br.com.projeto.classes;
 
 
+import java.util.Date;
 import java.util.List;
 
 public class Solicitacao {
     private int numPedido;
-    private int dataPedido;
-    private int dataRetirada;
+    private Date dataPedido;
+    private Date dataRetirada;
     private boolean pedidoRetirado;
     private Usuario usuario;
     private List<Item> itens;
 
 
-    public Solicitacao(Usuario usuario, int nPedido, int dtPedido, int dtRetirada, boolean pedRetirado) {
+    public Solicitacao(Usuario usuario, int nPedido, Date dtPedido) {
         this.setUsuario(usuario);
         this.setNumPedido(nPedido);
         this.setDataPedido(dtPedido);
-        this.setDataRetirada(dtRetirada);
-        this.setPedidoRetirado(pedRetirado);
+        this.setPedidoRetirado(false);
     }
 
-    public Situacao statusSolicitacao(int valor){
-        
-        switch (valor){
-            case 1:
-                 return Situacao.APROVADO;
-            case 2:
-                return Situacao.AGUARDANDO;
-            case 3:
-                return Situacao.CANCELADO;
-            case 4:
-                return Situacao.PENDENTE;
-            case 5:
-                return Situacao.REPROVADO;
-        }
-        return null;
-    }
+    //public Situacao statusSolicitacao(){
+
+    //}
 
     // getters e setters
     public int getNumPedido() {
@@ -46,19 +33,19 @@ public class Solicitacao {
         this.numPedido = numPedido;
     }
 
-    public int getDataPedido() {
+    public Date getDataPedido() {
         return dataPedido;
     }
 
-    public void setDataPedido(int dataPedido) {
+    public void setDataPedido(Date dataPedido) {
         this.dataPedido = dataPedido;
     }
 
-    public int getDataRetirada() {
+    public Date getDataRetirada() {
         return dataRetirada;
     }
 
-    public void setDataRetirada(int dataRetirada) {
+    public void setDataRetirada(Date dataRetirada) {
         this.dataRetirada = dataRetirada;
     }
 
@@ -79,6 +66,10 @@ public class Solicitacao {
             throw new RuntimeException("Usuario da solicitacao nao pode ser nulo!");
         }
         this.usuario = usuario;
+    }
+
+    public void adicionaItem(Item i){
+        itens.add(i);
     }
 
 }

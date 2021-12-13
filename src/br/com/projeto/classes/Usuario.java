@@ -6,29 +6,29 @@ public class Usuario {
 
     private String login;
     private String senha;
-    private int cotamaxima;
-    private int saldocota;
-    private boolean statususuario;
+    private int cotaMaxima;
+    private int saldoCota;
+    private boolean status;
     private Setor setor;
     private List<Solicitacao> solicitacoes;
 
     public Usuario(String login, String senha, boolean statususuario, Setor setor) {
         this.setLogin(login);
         this.setSenha(senha);
-        saldocota = 300;
+        saldoCota = 300;
         this.setStatususuario(statususuario);
         this.setSetor(setor);
     }
 
-    public void verificaLogin(String login, String senha){
+    public boolean verificaLogin(String login, String senha){
+        boolean x = false;
         if(this.getLogin().equals(login) && this.getSenha().equals(senha) && this.isStatususuario() == true){
-            System.out.println(this.getLogin()+" Logado!");
-            //return true;
+            x= true;
         }
         if (this.getSenha().equals(senha) == false){
-            throw new RuntimeException("Senha invalida!");
+            x = false;
         }
-        //return false;
+        return x;
     }
 
     public String getLogin() {
@@ -57,15 +57,15 @@ public class Usuario {
     }
 
     public int getSaldoCota() {
-        return saldocota;
+        return saldoCota;
     }
 
     public boolean isStatususuario() {
-        return statususuario;
+        return status;
     }
 
     public void setStatususuario(boolean statususuario) {
-        this.statususuario = statususuario;
+        this.status = status;
     }
 
     public String getSetor() {
@@ -78,6 +78,14 @@ public class Usuario {
         }
         this.setor = setor;
     }
+
+    public int verificaSaldo(){
+        return getSaldoCota();
+    }
+
+    //public void adicionaSolicitacao(itens: List<Item>){
+
+    //}
 }// fim classe usuario
 
 
