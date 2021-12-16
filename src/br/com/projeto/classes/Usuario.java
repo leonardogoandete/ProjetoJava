@@ -87,7 +87,11 @@ public class Usuario {
     public void adicionaSolicitacao(List<Item> itens){
 
     }
-
+    public void retiraPedido(Solicitacao s){
+        if(s.getStatus().equals(Situacao.APROVADO)) {
+            s.setPedidoRetirado(true);
+        }
+    }
 
 }// fim classe usuario
 
