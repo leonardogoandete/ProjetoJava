@@ -1,28 +1,29 @@
 package br.com.projeto.classes;
 
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
 public class Solicitacao {
     private int numPedido;
-    private Date dataPedido;
-    private Date dataRetirada;
+    private LocalDate dataPedido;
+    private LocalDate dataRetirada;
     private boolean pedidoRetirado;
     private Usuario usuario;
     private List<Item> itens;
 
 
-    public Solicitacao(Usuario usuario, int nPedido, Date dtPedido) {
+    public Solicitacao(Usuario usuario, int nPedido) {
         this.setUsuario(usuario);
         this.setNumPedido(nPedido);
-        this.setDataPedido(dtPedido);
+        this.setDataPedido(LocalDate.now());
         this.setPedidoRetirado(false);
     }
 
-    //public Situacao statusSolicitacao(){
+    public void statusSolicitacao(){
 
-    //}
+    }
 
     // getters e setters
     public int getNumPedido() {
@@ -33,19 +34,19 @@ public class Solicitacao {
         this.numPedido = numPedido;
     }
 
-    public Date getDataPedido() {
+    public LocalDate getDataPedido() {
         return dataPedido;
     }
 
-    public void setDataPedido(Date dataPedido) {
+    public void setDataPedido(LocalDate dataPedido) {
         this.dataPedido = dataPedido;
     }
 
-    public Date getDataRetirada() {
+    public LocalDate getDataRetirada() {
         return dataRetirada;
     }
 
-    public void setDataRetirada(Date dataRetirada) {
+    public void setDataRetirada(LocalDate dataRetirada) {
         this.dataRetirada = dataRetirada;
     }
 
@@ -69,7 +70,8 @@ public class Solicitacao {
     }
 
     public void adicionaItem(Item i){
-        itens.add(i);
+
+       itens.add(i);
     }
 
 }

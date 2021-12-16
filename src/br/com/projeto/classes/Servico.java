@@ -1,5 +1,5 @@
 
-package br.com.projeto.negocio;
+package br.com.projeto.classes;
 
 import br.com.projeto.classes.Item;
 import br.com.projeto.classes.Solicitacao;

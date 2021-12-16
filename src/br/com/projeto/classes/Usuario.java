@@ -83,9 +83,9 @@ public class Usuario {
         return getSaldoCota();
     }
 
-    //public void adicionaSolicitacao(itens: List<Item>){
+    public void adicionaSolicitacao(List<Item> itens){
 
-    //}
+    }
 }// fim classe usuario
 
 
