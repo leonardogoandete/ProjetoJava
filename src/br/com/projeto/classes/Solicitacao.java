@@ -2,8 +2,8 @@ package br.com.projeto.classes;
 
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class Solicitacao {
     private int numPedido;
@@ -11,7 +11,8 @@ public class Solicitacao {
     private LocalDate dataRetirada;
     private boolean pedidoRetirado;
     private Usuario usuario;
-    private List<Item> itens;
+    private Situacao status;
+    private ArrayList<Item> itens = new ArrayList<>();
 
 
     public Solicitacao(Usuario usuario, int nPedido) {
@@ -19,10 +20,11 @@ public class Solicitacao {
         this.setNumPedido(nPedido);
         this.setDataPedido(LocalDate.now());
         this.setPedidoRetirado(false);
+        this.setStatus(Situacao.PENDENTE);
     }
 
-    public void statusSolicitacao(){
-
+    public void statusSolicitacao(String x){
+            status.setValor(x);
     }
 
     // getters e setters
@@ -70,8 +72,14 @@ public class Solicitacao {
     }
 
     public void adicionaItem(Item i){
-
        itens.add(i);
     }
 
+    public Situacao getStatus() {
+        return status;
+    }
+
+    public void setStatus(Situacao status) {
+        this.status = status;
+    }
 }

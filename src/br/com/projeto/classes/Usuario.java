@@ -1,5 +1,6 @@
 package br.com.projeto.classes;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Usuario {
@@ -10,7 +11,7 @@ public class Usuario {
     private int saldoCota;
     private boolean status;
     private Setor setor;
-    private List<Solicitacao> solicitacoes;
+    private ArrayList<Solicitacao> solicitacoes = new ArrayList<>();
 
     public Usuario(String login, String senha, boolean statususuario, Setor setor) {
         this.setLogin(login);
@@ -86,6 +87,8 @@ public class Usuario {
     public void adicionaSolicitacao(List<Item> itens){
 
     }
+
+
 }// fim classe usuario
 
 

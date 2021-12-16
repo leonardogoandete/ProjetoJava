@@ -1,14 +1,16 @@
 package br.com.projeto.classes;
 
+
 public class Supervisor extends Usuario{
 
     public Supervisor(String login, String senha, boolean statususuario, Setor setor) {
         super(login, senha, statususuario, setor);
     }
 
-    public void aprovaSolicitacoes(Solicitacao solicitacao){
-        //solicitacao.getNumPedido();
-        //solicitacao.statusSolicitacao(1);
+    public void aprovaSolicitacoes(Solicitacao x){
+        Solicitacao test = x;
+
+        test.setStatus(Situacao.APROVADO);
     }
 
     public void reprovaSolicitacoes(Solicitacao solicitacao){

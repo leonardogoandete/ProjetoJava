@@ -12,7 +12,7 @@ public class app {
         Item caneta = new Item("Caneta","Caneta Azul","insumo",20,1.80f);
         Item monitor = new Item("Monitor","Monitor 24polegadas","material TI", 5,492.50f);
         Usuario leonardo = new Usuario("leo_goandete","12345",true,rh);
-
+        Supervisor sup1 = new Supervisor("sup1","1234",true,rh);
 
 
 
@@ -20,10 +20,16 @@ public class app {
 
         System.out.println(sol1.getDataPedido());
         sol1.adicionaItem(lapis);
+        sol1.adicionaItem(caneta);
         sol1.setDataRetirada(LocalDate.of(2022,2,23));
         System.out.println(sol1.getDataRetirada());
+        System.out.println(sol1.isPedidoRetirado());
 
-
+        System.out.println(sol1.getStatus());
+        System.out.println(sup1.consultaSaldoUsuario(leonardo));
+        sup1.aprovaSolicitacoes(sol1);
+        System.out.println(sol1.getStatus());
+        sol1.
 
 
 
