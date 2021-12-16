@@ -27,7 +27,7 @@ public class Solicitacao {
             status.setValor(x);
     }
 
-    // getters e setters
+    //   getters e setters
     public int getNumPedido() {
         return numPedido;
     }

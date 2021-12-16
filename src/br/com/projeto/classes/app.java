@@ -40,8 +40,8 @@ public class app {
         sup1.aprovaSolicitacoes(sol2);
         leonardo.retiraPedido(sol2);
         System.out.println("=======");
-        System.out.println("Numero do pedido: " + sol2.getNumPedido());
-        System.out.println("Status pedido: " + sol2.getStatus());
+        System.out.println("Numero do pedido: "+ sol2.getNumPedido());
+        System.out.println("Status pedido: "+ sol2.getStatus());
         System.out.println(sol2.isPedidoRetirado());
 
 
