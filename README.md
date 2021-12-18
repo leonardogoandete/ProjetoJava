@@ -4,9 +4,9 @@
 usuario faz solicitações de itens que tem em estoque, que ele está
 autorizado a solicitar e que ele ainda tem cota:
 
-5.1) usuario faz solicitação (numPedido=1), com apenas um item.
+~~5.1) usuario faz solicitação (numPedido=1), com apenas um item.~~
 
-5.2) usuario faz solicitação (numPedido=3), com 3 itens.
+~~5.2) usuario faz solicitação (numPedido=3), com 3 itens.~~
 
 5.3) usuario tenta retirar pedido 1 (não passa, pois ainda não foi autorizado).
 
