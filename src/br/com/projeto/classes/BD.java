@@ -14,11 +14,11 @@ public class BD {
     public void criaItens() {
 
         Item i;
-        i = new Item(0,"Lapis","Lapis ponta fina 3B","insumo",12,2.35f);
+        i = new Item("Lapis","Lapis ponta fina 3B","insumo",12,2.35f);
         bdItens.add(i);
-        i = new Item(1,"Caneta","Caneta Azul","insumo",20,1.80f);
+        i = new Item("Caneta","Caneta Azul","insumo",20,1.80f);
         bdItens.add(i);
-        i = new Item(2,"Monitor","Monitor 24polegadas","material TI", 5,492.50f);
+        i = new Item("Monitor","Monitor 24polegadas","material TI", 5,492.50f);
         bdItens.add(i);
     }
 }

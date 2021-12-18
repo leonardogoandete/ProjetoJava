@@ -4,7 +4,6 @@ package br.com.projeto.classes;
 import java.util.List;
 
 public class Item {
-    private int cod;
     private String nome;
     private String descricao;
     private String tipo;
@@ -13,21 +12,12 @@ public class Item {
     private List<Setor> setores;
     private List<Solicitacao> solicitacoes;
 
-    public Item(int cod, String nome, String descricao, String tipo, int qtde, float valor) {
-        this.setCod(cod);
+    public Item(String nome, String descricao, String tipo, int qtde, float valor) {
         this.setNome(nome);
         this.setDescricao(descricao);
         this.setTipo(tipo);
         this.setQtde(qtde);
         this.setValor(valor);
-    }
-
-    public int getCod() {
-        return cod;
-    }
-
-    public void setCod(int cod) {
-        this.cod = cod;
     }
 
     public String getNome() {
