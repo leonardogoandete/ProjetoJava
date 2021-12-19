@@ -1,24 +1,15 @@
 package br.com.projeto.classes;
 
-
-
 import java.util.ArrayList;
 
-
-
 public class BD {
-    // public static List<Cliente> clientes = new ArrayList<Cliente>();
-    // public static List<Produto> produtos = new ArrayList<Produto>();
-    public static ArrayList<Item> bdItens = new ArrayList<Item>();
+    public static ArrayList<Item> bdItens = new ArrayList();
 
-    public void criaItens() {
-
+    public static void criaItens() {
         Item i;
-        i = new Item("Lapis","Lapis ponta fina 3B","insumo",12,2.35f);
+        i = new Item("Lapis", "Lpais de desenho", "escritorio", 20, 2.53f);
         bdItens.add(i);
-        i = new Item("Caneta","Caneta Azul","insumo",20,1.80f);
-        bdItens.add(i);
-        i = new Item("Monitor","Monitor 24polegadas","material TI", 5,492.50f);
+        i = new Item("Caneta", "Caneta azul", "escritorio", 12, 1.89f);
         bdItens.add(i);
     }
 }

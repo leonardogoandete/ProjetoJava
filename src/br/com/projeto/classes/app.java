@@ -9,6 +9,7 @@ public class app {
         Servico servico;
 
         Setor rh = new Setor("Recursos Humanos",1000);
+        Setor ti = new Setor("TI",800);
 
         Usuario leonardo = new Usuario("leo_goandete","12345",true,rh);
         Supervisor sup1 = new Supervisor("sup1","1234",true,rh);
@@ -18,7 +19,6 @@ public class app {
         Solicitacao sol1 = new Solicitacao(leonardo,1);
         Solicitacao sol2 = new Solicitacao(leonardo,3);
         System.out.println(sol1.getDataPedido());
-        //sol1.adicionaItem(BD.bdItens.get(1));
 
         sol1.setDataRetirada(LocalDate.of(2022,2,23));
         System.out.println(sol1.getDataRetirada());
