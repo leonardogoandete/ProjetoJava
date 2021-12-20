@@ -15,7 +15,7 @@ public class Servico {
         return null;
     }
 
-    public Situacao verificaStatusSolicitacao(){
+    public Solicitacao verificaStatusSolicitacao(){
         return null;
     }
 

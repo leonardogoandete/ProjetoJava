@@ -7,9 +7,8 @@ public class Supervisor extends Usuario{
         super(login, senha, statususuario, setor);
     }
 
-    public void aprovaSolicitacoes(Solicitacao x){
-        Solicitacao test = x;
-
+    public void aprovaSolicitacoes(Solicitacao solicitacao){
+        Solicitacao test = solicitacao;
         test.setStatus(Situacao.APROVADO);
     }
 
