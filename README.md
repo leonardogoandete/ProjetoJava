@@ -8,19 +8,19 @@ autorizado a solicitar e que ele ainda tem cota:
 
 ~~5.2) usuario faz solicitação (numPedido=3), com 3 itens.~~
 
-5.3) usuario tenta retirar pedido 1 (não passa, pois ainda não foi autorizado).
+~~5.3) usuario tenta retirar pedido 1 (não passa, pois ainda não foi autorizado).~~
 
-5.4) usuario tenta retirar pedido 3 (não passa, pois ainda não foi autorizado).
+~~5.4) usuario tenta retirar pedido 3 (não passa, pois ainda não foi autorizado).~~
 
-5.5) supervisor autoriza pedido 1.
+~~5.5) supervisor autoriza pedido 1.~~
 
-5.6) usuario tenta retirar pedido 3 (não passa).
+~~5.6) usuario tenta retirar pedido 3 (não passa).~~
 
-5.7) usuario tenta retirar pedido 1.
+~~5.7) usuario tenta retirar pedido 1.~~
 
-5.8) supervisor reprova pedido 3.
+~~5.8) supervisor reprova pedido 3.~~
 
-5.9) usuario tenta retirar pedido 3 (não passa).
+~~5.9) usuario tenta retirar pedido 3 (não passa).~~
 
 #Usuario faz solicitações inválidas:
 5.10) usuario faz solicitação (numPedido=4) excedendo sua cota.
