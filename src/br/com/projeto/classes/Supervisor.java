@@ -14,8 +14,8 @@ public class Supervisor extends Usuario{
     }
 
     public void reprovaSolicitacoes(Solicitacao solicitacao){
-        //solicitacao.getNumPedido();
-        //solicitacao.statusSolicitacao(1);
+        Solicitacao test = solicitacao;
+        test.setStatus(Situacao.REPROVADO);
     }
 
     public int consultaSaldoUsuario(Usuario usuario){

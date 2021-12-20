@@ -90,6 +90,10 @@ public class Usuario {
     public void retiraPedido(Solicitacao s){
         if(s.getStatus().equals(Situacao.APROVADO)) {
             s.setPedidoRetirado(true);
+        }else if(s.getStatus().equals(Situacao.REPROVADO)) {
+            throw new RuntimeException("Pedido Reprovado");
+        }else if(s.getStatus().equals(Situacao.PENDENTE)) {
+            throw new RuntimeException("Pedido Pendente");
         }
     }
 
