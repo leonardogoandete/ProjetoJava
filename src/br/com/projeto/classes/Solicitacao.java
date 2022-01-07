@@ -23,10 +23,6 @@ public class Solicitacao {
         this.setStatus(Situacao.PENDENTE);
     }
 
-    public void statusSolicitacao(String x){
-            status.setValor(x);
-    }
-
     //   getters e setters
     public int getNumPedido() {
         return numPedido;

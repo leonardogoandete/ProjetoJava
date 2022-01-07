@@ -65,7 +65,7 @@ public class Usuario {
         return status;
     }
 
-    public void setStatususuario(boolean statususuario) {
+    public void setStatususuario(boolean status) {
         this.status = status;
     }
 

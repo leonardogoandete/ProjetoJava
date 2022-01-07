@@ -3,8 +3,6 @@ package br.com.projeto.classes;
 
 import java.time.LocalDate;
 
-
-
 public class app {
     public static void main(String[] args) {
 
@@ -44,6 +42,7 @@ public class app {
         System.out.println("Numero do pedido: "+ sol2.getNumPedido());
         System.out.println("Status pedido: "+ sol2.getStatus());
         System.out.println(sol2.isPedidoRetirado());
+
 
 
 
