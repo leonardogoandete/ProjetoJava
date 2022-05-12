@@ -1,4 +1,7 @@
 # ProjetoJava
+#Diagrama de Classes:
+![Diagrama](diagrama_v17.jpeg)
+
 
 #Testes a serem efetuados:
 usuario faz solicitações de itens que tem em estoque, que ele está
